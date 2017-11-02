@@ -1,0 +1,13 @@
+[package]
+name = "lumol-capi"
+version = "0.1.0"
+authors = ["Guillaume Fraux <guillaume.fraux@chimie-paristech.fr>"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+lumol = {path = "../lumol/"}
+
+[build-dependencies]
+cbindgen = "*"
